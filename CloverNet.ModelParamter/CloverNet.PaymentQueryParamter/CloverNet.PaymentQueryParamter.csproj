@@ -30,6 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CloverNet.SecurityTool">
+      <HintPath>..\..\..\SecurityTool\CloverNet.SecurityTool\CloverNet.SecurityTool\bin\Debug\CloverNet.SecurityTool.dll</HintPath>
+    </Reference>
+    <Reference Include="CloverNet.WebDataConverter">
+      <HintPath>..\..\..\WebDataConverter\CloverNet.WebDataConverter\CloverNet.WebDataConverter\bin\Debug\CloverNet.WebDataConverter.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

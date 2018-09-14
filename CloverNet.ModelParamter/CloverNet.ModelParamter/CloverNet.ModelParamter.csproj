@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="DefaultModelParamter.cs" />
     <Compile Include="IModelParamter.cs" />
+    <Compile Include="IModelParamterBuilder.cs" />
     <Compile Include="ModelParamterBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
