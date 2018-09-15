@@ -7,8 +7,8 @@
     <ProjectGuid>{C569F724-BE94-4FB9-A7B5-E029C0F1D29C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CloverNet.PaymentQueryParamter</RootNamespace>
-    <AssemblyName>CloverNet.PaymentQueryParamter</AssemblyName>
+    <RootNamespace>CloverNet.PaymentParamter</RootNamespace>
+    <AssemblyName>CloverNet.PaymentParamter</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,7 +32,7 @@
   <ItemGroup>
     <Reference Include="CloverNet.ModelParamter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\CloverNet.ModelParamter.dll</HintPath>
+      <HintPath>..\CloverNet.ModelParamter\bin\Debug\CloverNet.ModelParamter.dll</HintPath>
     </Reference>
     <Reference Include="CloverNet.SecurityTool">
       <HintPath>..\..\..\SecurityTool\CloverNet.SecurityTool\CloverNet.SecurityTool\bin\Debug\CloverNet.SecurityTool.dll</HintPath>
@@ -43,6 +43,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,8 +52,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PaymentNotifyParamterBuilder.cs" />
     <Compile Include="PaymentQueryParamterBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="NotifyParamterConfig.cs" />
     <Compile Include="QueryParamterConfig.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

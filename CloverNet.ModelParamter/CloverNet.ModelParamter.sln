@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloverNet.ModelParamter", "CloverNet.ModelParamter\CloverNet.ModelParamter.csproj", "{FDBA1ED0-5F7E-4F1A-BDDB-1F79DAA1007B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloverNet.PaymentQueryParamter", "CloverNet.PaymentQueryParamter\CloverNet.PaymentQueryParamter.csproj", "{C569F724-BE94-4FB9-A7B5-E029C0F1D29C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloverNet.PaymentParamter", "CloverNet.PaymentQueryParamter\CloverNet.PaymentParamter.csproj", "{C569F724-BE94-4FB9-A7B5-E029C0F1D29C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

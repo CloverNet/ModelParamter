@@ -16,9 +16,20 @@ namespace CloverNet.ModelParamter
             return memberExpression?.Member;
         }
 
+        public MemberInfo GetProperty<T>(Expression<Func<T, dynamic>> expression) where T : class
+        {
+            var memberExpression = expression.Body as MemberExpression;
+            return memberExpression?.Member;
+        }
+
         public virtual string GetPropertyName(Expression<Func<dynamic>> expression)
         {
              return GetProperty(expression)?.Name;
+        }
+
+        public string GetPropertyName<T>(Expression<Func<T, dynamic>> expression) where T : class
+        {
+            return GetProperty(expression)?.Name;
         }
 
         public virtual KeyValuePair<string, object> GetPropertyValue(Expression<Func<dynamic>> expression)

@@ -12,7 +12,11 @@ namespace CloverNet.ModelParamter
     {
         string GetPropertyName(Expression<Func<dynamic>> expression );
 
+        string GetPropertyName<T>(Expression<Func<T,dynamic>> expression) where T:class;
+
         MemberInfo GetProperty(Expression<Func<dynamic>> expression);
+
+        MemberInfo GetProperty<T>(Expression<Func<T, dynamic>> expression) where T : class;
 
         KeyValuePair<string,object> GetPropertyValue(Expression<Func<dynamic>> expression);
     }

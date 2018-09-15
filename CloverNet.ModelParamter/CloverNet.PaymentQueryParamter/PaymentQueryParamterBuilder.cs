@@ -7,7 +7,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CloverNet.PaymentQueryParamter
+namespace CloverNet.PaymentParamter
 {
     public class PaymentQueryParamterBuilder : ModelParamterBuilder
     {
