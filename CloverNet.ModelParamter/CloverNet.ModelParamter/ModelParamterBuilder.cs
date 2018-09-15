@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 
 namespace CloverNet.ModelParamter
 {
-    public abstract class ModelParamterBuilder
+    public class ModelParamterBuilder
     {
         protected IModelParamter ModelParamter { get; set; } = new DefaultModelParamter();
 
-        protected IDictionary<string, object> Paramter { get; set; }
-
+        protected IDictionary<string, object> Paramter { get; set; } = new Dictionary<string, object>();
 
         public virtual ModelParamterBuilder AddParamter(Expression<Func<dynamic>> expression)
         {

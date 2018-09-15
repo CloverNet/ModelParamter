@@ -11,8 +11,8 @@ namespace CloverNet.PaymentQueryParamter
 {
     public class PaymentQueryParamterBuilder : ModelParamterBuilder
     {
-        protected QueryParamterConfig Config { get; set; }
-        protected IDictionary<string, object> SignParamter { get; set; }
+        protected QueryParamterConfig Config { get; set; } = new QueryParamterConfig();
+        protected IDictionary<string, object> SignParamter { get; set; } = new Dictionary<string, object>();
         
         public static PaymentQueryParamterBuilder Create()
         {

@@ -30,11 +30,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CloverNet.ModelParamter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CloverNet.ModelParamter.dll</HintPath>
+    </Reference>
     <Reference Include="CloverNet.SecurityTool">
       <HintPath>..\..\..\SecurityTool\CloverNet.SecurityTool\CloverNet.SecurityTool\bin\Debug\CloverNet.SecurityTool.dll</HintPath>
     </Reference>
-    <Reference Include="CloverNet.WebDataConverter">
-      <HintPath>..\..\..\WebDataConverter\CloverNet.WebDataConverter\CloverNet.WebDataConverter\bin\Debug\CloverNet.WebDataConverter.dll</HintPath>
+    <Reference Include="CloverNet.WebDataConverter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CloverNet.WebDataConverter.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,12 +54,6 @@
     <Compile Include="PaymentQueryParamterBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueryParamterConfig.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CloverNet.ModelParamter\CloverNet.ModelParamter.csproj">
-      <Project>{FDBA1ED0-5F7E-4F1A-BDDB-1F79DAA1007B}</Project>
-      <Name>CloverNet.ModelParamter</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
