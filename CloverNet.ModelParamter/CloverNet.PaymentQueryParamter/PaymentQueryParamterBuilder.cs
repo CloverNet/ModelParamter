@@ -180,11 +180,16 @@ namespace CloverNet.PaymentParamter
             this.Config.Result = ConverterFactory.GetService(_type).Convert(this.SignParamter);
         }
 
+        public virtual void RemoveSecretKey()
+        {
+            this.SignParamter.Remove(this.Config.SecretKey);
+        }
         public virtual string Build()
         {
             SetSecretKey();
             SetSortFlag();
             SetSignatureAlgorithm();
+            RemoveSecretKey();
             SetConverter();
 
             return this.Config.Result;
